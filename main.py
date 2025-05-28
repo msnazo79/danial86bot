@@ -4,6 +4,7 @@ import requests
 TOKEN = "7923818163:AAESxfP1d-QUorPzWJuZExslSPZnxsSVJDM"
 
 bot = telebot.TeleBot(TOKEN)
+bot.set_webhook()
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
