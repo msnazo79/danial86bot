@@ -3,12 +3,6 @@ import requests
 
 TOKEN = "7923818163:AAESxfP1d-QUorPzWJuZExslSPZnxsSVJDM"
 
-# تنظیم پراکسی برای کتابخانه requests
-telebot.apihelper.proxy = {
-    'http': 'http://127.0.0.1:53463',
-    'https': 'http://127.0.0.1:53463'
-}
-
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
